@@ -6,7 +6,7 @@ const initialState = {
   arrayofLitags:[],
   explanationAndInpQna:false,
   preview:false,
-  searchLibrari:true
+  searchLibrari:false
 };
 
 const Slice = createSlice({
