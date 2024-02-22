@@ -1,0 +1,59 @@
+.forextracss {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.h1forextracss {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  transition: transform 250ms ease-in-out;
+  cursor: pointer;
+}
+.leftsidebar {
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 1px;
+  transition: transform 250ms ease-in-out;
+  cursor: pointer;
+  
+}
+.searchlibright{
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 1px;
+  transition: right 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.forshadowbox{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainDiv{
+  transition: margin-left 500ms ease-in-out;
+ 
+}
+
+.editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+}
+
+.editor-content {
+  min-height: 200px;
+  outline: none;
+}
+
+
+
+
+
+
