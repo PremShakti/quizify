@@ -6,7 +6,16 @@ const initialState = {
   arrayofLitags:[],
   explanationAndInpQna:false,
   preview:false,
-  searchLibrari:false
+  searchLibrari:false,
+  dataArr:[],
+  obj:{
+    cropedImgForQnA:null,
+    cropedImgExplanation:null,
+    arrForOptions:[],
+    textForQna:"",
+    textForExplanation:""
+  }
+
 };
 
 const Slice = createSlice({
@@ -17,7 +26,9 @@ const Slice = createSlice({
       state.leftsidetoglemenue = !state.leftsidetoglemenue;
     },
     IncreaseQuestions(state,action){
-           state.arrayofLitags.push(1)
+      if(state.obj.cropedImgForQnA && state.obj.arrForOptions[0] && state.obj.textForQna){
+        state.arrayofLitags.push(state.obj)
+      }
     },
     ExplAndInpQna(state,action){
       state.explanationAndInpQna=!state.explanationAndInpQna
@@ -27,10 +38,30 @@ const Slice = createSlice({
     },
     searchLib(state,action){
       state.searchLibrari=!state.searchLibrari
-      console.log("okkkkkkkk")
+      
+    },
+    getCropedimgForQna(state,action){
+      state.obj.cropedImgForQnA=action.payload
+      console.log(state.obj.cropedImgForQnA)
+      
+    },
+    getCropedimgForExplanation(state,action){
+      state.obj.cropedImgExplanation=action.payload
+      
+    },
+    textForQnaFunction(state,action){
+      state.obj.textForQna=action.payload
+      
+    },
+    textForExpFunction(state,action){
+      state.obj.textForExplanation=action.payload
+      
+    },
+    arrForOptions(state,action){
+      state.obj.arrForOptions.push(action.payload)
     }
   },
 });
 
-export const { LeftTogleMenue,IncreaseQuestions,ExplAndInpQna,previewTogle,searchLib } = Slice.actions;
+export const { LeftTogleMenue,IncreaseQuestions,ExplAndInpQna,previewTogle,searchLib,getCropedimgForQna,getCropedimgForExplanation,textForExpFunction,textForQnaFunction,arrForOptions } = Slice.actions;
 export default Slice.reducer;
