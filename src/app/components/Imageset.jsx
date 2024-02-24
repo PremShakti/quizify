@@ -6,7 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { CiImageOn } from "react-icons/ci";
 import { BiImageAdd } from "react-icons/bi";
 
-import "react-image-crop/dist/ReactCrop.css";
+
 
 const Imageset = ({ onImageUpload, handleImageview }) => {
   const [uplodadImg, SetUImg] = useState();

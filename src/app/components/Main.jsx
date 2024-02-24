@@ -15,7 +15,6 @@ const Main = () => {
   const previewTogleBtn = useSelector((stor) => stor.preview);
   const ExplanationAndInpQna = useSelector((stor) => stor.explanationAndInpQna);
   const { isSmallScreen } = useScreenSize();
-  // console.log(isSmallScreen)
 
   useEffect(() => {
     console.log(isSmallScreen);

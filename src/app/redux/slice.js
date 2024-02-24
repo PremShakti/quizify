@@ -28,6 +28,11 @@ const Slice = createSlice({
     IncreaseQuestions(state,action){
       if(state.obj.cropedImgForQnA && state.obj.arrForOptions[0] && state.obj.textForQna){
         state.arrayofLitags.push(state.obj)
+        state.obj.cropedImgForQnA=null,
+        state.obj.cropedImgExplanation=null,
+        state.obj.arrForOptions=[],
+        state.obj.textForQna="",
+        state.obj.textForExplanation=""
       }
     },
     ExplAndInpQna(state,action){

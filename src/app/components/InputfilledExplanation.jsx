@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { IoSaveOutline } from "react-icons/io5";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { CiImageOn } from "react-icons/ci";
-import ReachTexsEditor from "./ReachTexsEditor";
+
 import { useDispatch, useSelector } from "react-redux";
 import { ExplAndInpQna, getCropedimgForExplanation } from "../redux/slice";
 import Tiptap from "./Tiptap";
